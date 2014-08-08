@@ -1,0 +1,105 @@
+/* Base
+   -------------------------------------------------- */
+
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 50em;
+    margin: 0 auto;
+    color: #222;
+}
+
+a {
+    border-bottom: 1px dotted;
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    border-bottom-style: solid;
+}
+
+
+
+/* Modules
+   -------------------------------------------------- */
+
+.section {
+    padding: 2em;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+@media all and (min-width: 50em) {
+    .section {
+        margin: 0 2em;
+        padding: 2em 0;
+    }
+}
+
+
+
+/* Title bar
+   -------------------------------------------------- */
+
+.title-bar {
+    border-bottom: 1px solid;
+}
+
+.title-bar__instructions {
+    font-size: 1.5em;
+}
+
+
+
+/* Content
+   -------------------------------------------------- */
+
+.form {
+    margin-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.form__entry {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #ffe9e9;
+}
+
+.incoming { background-color: #e9ffe9; }
+.whats-left { background-color: #ffffc9; }
+
+.form__form-field-header {
+    font-size: 1.25em;
+}
+
+.form__form-field-header > h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form__form-field-content {
+    padding-top: 1em;
+    overflow: hidden;
+}
+
+
+
+/* Footer bar
+   -------------------------------------------------- */
+
+.footer-bar {
+    border-top: 1px solid;
+    text-align: center;
+}
